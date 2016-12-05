@@ -5,17 +5,21 @@ html, body {
   height: 100%;
   width: 100%;
   background: #8c8c8c;
+  /*background: #203748;*/
+  font-family: 'Open Sans', sans-serif;
 }
 
 
 .navbar {
   margin: 50px 15px;
   padding: 0 70px;
+  /*background-color: #d41111;*/
 }
 
 .content {
   display: block;
-  /*min-height: 100%;*/
+  min-height: 100%;
+  color: white;
 }
 
 #footer {
@@ -41,6 +45,16 @@ html, body {
 
 .jumbotron {
   margin-bottom: 0;
+}
+
+.carousel {
+  /*background: #203748;*/
+}
+
+.nav_main {
+  margin: 0;
+  margin-top: 20px;
+  border-radius: 0;
 }
 
 .carousel-inner img {
@@ -73,21 +87,14 @@ html, body {
   width: 100%;
 }
 
-.col-md-3 {
-  padding: 10px;
+.col-sm-2 {
+  padding: 40px;
 }
 
 .xs-brand {
   margin: 10px 0px;
 }
 
-.brands_logos {
-  width: 100%;
-}
-.brands_logos img {
-  max-width: 100px;
-  max-height: 100px;
-}
 
 /*Catalog page*/
 
@@ -96,23 +103,52 @@ html, body {
   margin: 20px 50px 70px 50px;
 }
 
+.r-type {
+  padding: 50px 0;
+}
+
+.type {
+  padding: 50px;
+}
+
 .catalog {
   position: relative;
-  margin: 20px 0;
+  margin: 30px 0;
   min-height: 500px;
 }
 
-.filters {
+.l-block {
   display: inline-block;
   float: left;
   width: 25%;
-  background: blue;
-  /*position: fixed;*/
+  padding: 20px 0;
+
+}
+
+.filters {
+  position: fixed;
+  width: 24%;
+  background: #d9d9d9;
+  border-radius: 12px;
+  color: #262626;
+  padding: 20px 0;
 }
 
 .list {
   display: inline-block;
   width: 75%;
-  background: green;
+  /*background: green;*/
+  padding: 20px 0;
+  padding-left: 10px;
+}
 
+.sorting {
+  text-align: right;
+  margin-bottom: 10px;
+  /*float: right;*/
+  display: inline-block;
+}
+
+.item {
+  padding: 20px;
 }
