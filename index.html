@@ -1,0 +1,132 @@
+<!DOCTYPE html>       <!--  -->
+<html>
+<head lang="uk">
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> <!-- Including bootstrap -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script> <!-- Including JQuery JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> <!-- Including Bootstrap JavaScript -->
+    <script type="text/javascript" src="js/main.js"> </script>  <!-- My js -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" /> <!-- My css -->
+</head>
+
+
+<body>
+
+<header>
+
+    <nav class="navbar navbar-inverse nav_main">  <!-- Navigation -->
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">All Sales</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="shops.html">Магазины</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+      </div>
+    </nav>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel"> <!-- All Carousel -->
+    <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="" alt="Image">  <!-- img 1200x400 -->
+            <div class="carousel-caption">
+              <h3>Test</h3>
+              <p>test test</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="" alt="Image">
+            <div class="carousel-caption">
+              <h3>Test</h3>
+              <p>test test</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+</header>
+
+  <div class="content container-fluid"> <!-- Main content of the page -->
+    <div class="specials text-center">  <!-- Block for special offers -->
+        <div class="row">
+          <div class="col-md-4">
+            <!-- <a href="" ><img src="../sources/special1.jpg" alt="Special offer #1"></a> -->
+            <div class="panel panel-warning">
+              <div class="panel-heading">Weekend's sales</div>
+              <div class="panel-body"><a href=""><img src="assets/img/specials/special1.jpg" class="img-responsive" style="width:100%" alt="Image"></a></div>
+              <!-- <div class="panel-footer">-50% for everything</div> -->
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="panel panel-danger">
+              <div class="panel-heading">BLACK FRIDAY DEAL</div>
+              <div class="panel-body"><a href=""><img src="assets/img/specials/special1.jpg" class="img-responsive" style="width:100%" alt="Image"></a></div>
+              <div class="panel-footer">-50% for everything</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="panel panel-info">
+              <div class="panel-heading">Snowboarding season is coming</div>
+              <div class="panel-body"><a href=""><img src="assets/img/specials/special1.jpg" class="img-responsive" style="width:100%" alt="Image"></a></div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="main_brands text-center"> <!-- Brands logos -->
+      <div class="row">
+        <img class="col-sm-2 xs-brand" src="assets/img/brands/puma.png" alt="Brand1">
+        <img class="col-sm-2 xs-brand" src="assets/img/brands/bershka.png" alt="Brand2">
+        <img class="col-sm-2 xs-brand" src="assets/img/brands/oodji.png" alt="Brand3">
+        <img class="col-sm-2 xs-brand" src="assets/img/brands/pullandbear.png" alt="Brand4">
+        <img class="col-sm-2 xs-brand" src="" alt="Brand5">
+        <img class="col-sm-2 xs-brand" src="" alt="Brand6">
+      </div>
+      <div class="row">
+        <img class="col-sm-2 xs-brand" src="" alt="Brand7">
+        <img class="col-sm-2 xs-brand" src="" alt="Brand8">
+        <img class="col-sm-2 xs-brand" src="" alt="Brand9">
+        <img class="col-sm-2 xs-brand" src="" alt="Brand10">
+        <img class="col-sm-2 xs-brand" src="" alt="Brand11">
+        <img class="col-sm-2 xs-brand" src="" alt="Brand12">
+      </div>
+    </div>
+  </div>
+
+
+  <footer id="footer" class="container"> <!-- Footer -->
+    <div class="left_f">...Social medias...
+    </div>
+    <div class="right_f">...Contacts...
+    </div>
+  </footer>
+
+
+</body>
+</html>
