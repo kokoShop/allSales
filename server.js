@@ -1,3 +1,3 @@
 var main = require('./Backend/main');
 
-main.startServer(5055);
+main.startServer(5050);

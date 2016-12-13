@@ -9,9 +9,11 @@ function configurateEndpoints(app){
 	//var api = require('./api');
 	var pages = require('./pages');
 
-	app.get('/', pages.mainPage);
+	app.get('/', pages.mainPage);	
 
-	app.get('/catalog', pages.catalog);
+	app.get('/catalog.html', pages.catalog);
+
+	app.use(express.static(path.join(__dirname, './pattern')));
 
 }
 
