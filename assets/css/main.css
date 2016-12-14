@@ -363,13 +363,14 @@ html, body {
   margin: 20px 10px;
   margin-right: 0;
   padding: 10px;
+  padding-right: 0;
 }
 
-.label-primary {
+.item-labels {
   color: black;
 }
 
-.label-primary:hover {
+.item-labels:hover {
   color: black;
   background-color: #3884c7;
 }
