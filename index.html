@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> <!-- Including bootstrap -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script> <!-- Including JQuery JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> <!-- Including Bootstrap JavaScript -->
-    <script type="text/javascript" src="js/main.js"> </script>  <!-- My js -->
+    <script type="text/javascript" src="assets/js/main.js"> </script>  <!-- My js -->
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" /> <!-- My css -->
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|PT+Sans|Comfortaa" rel="stylesheet"> <!-- Google Fonts -->
 </head>
 
 
@@ -15,7 +16,7 @@
 
 <header>
 
-    <nav class="navbar navbar-inverse nav_main">  <!-- Navigation -->
+    <!-- <nav class="navbar navbar-inverse nav_main">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -28,11 +29,11 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="catalog.html">Каталог</a></li>
+            <li ><a href="shopping.html">Каталог</a></li>
             <li><a href="shops.html">Магазины</a></li>
             <li><a href="contacts.html">Контакты</a></li>
       </div>
-    </nav>
+    </nav> -->
 
     <div id="myCarousel" class="carousel slide" data-ride="carousel"> <!-- All Carousel -->
     <!-- Indicators -->
@@ -44,7 +45,7 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
           <div class="item active">
-            <img src="" alt="Image">  <!-- img 1200x400 -->
+            <img src="assets/img/banners/banner.jpg" alt="Image">  <!-- img 1200x400 -->
             <div class="carousel-caption">
               <h3>Test</h3>
               <p>test test</p>
@@ -70,51 +71,92 @@
           <span class="sr-only">Next</span>
         </a>
     </div>
+
+    <nav class="navbar-main navbar navbar-inverse center"> <!-- Navigation -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
+          <span class="sr-only"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">All Sales</a>
+      </div>
+      <!-- <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-left">
+          <li><a href="index.html">Main</a></li>
+          <li><a href="shops.html">Shops</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+      </div> -->
+
+      <div class="nav navbar-right collapse navbar-collapse" id="bs-navbar-collapse-1">
+        <form class="search-form btn btn-lg btn-nav">
+          <div class="form-group has-feedback">
+          <input type="text" class="form-control" id="search" placeholder="Search">
+          <span class="glyphicon glyphicon-search form-control-feedback"></span>
+          </div>
+        </form>
+        <a href="" class="glyphicon glyphicon-shopping-cart btn-nav btn"></a>
+      </div>
+
+      </nav>
+
 </header>
 
   <div class="content container-fluid"> <!-- Main content of the page -->
     <div class="specials text-center">  <!-- Block for special offers -->
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-6 col-xs-12">
             <!-- <a href="" ><img src="../sources/special1.jpg" alt="Special offer #1"></a> -->
             <div class="panel panel-warning">
               <div class="panel-heading">Weekend's sales</div>
-              <div class="panel-body"><a href=""><img src="assets/img/specials/special1.jpg" class="img-responsive" style="width:100%" alt="Image"></a></div>
+              <div class="panel-body"><a href="shopping.html"><img src="assets/img/specials/special1.jpg" class="img-responsive" style="width:100%" alt="Image"></a></div>
               <!-- <div class="panel-footer">-50% for everything</div> -->
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="panel panel-danger">
               <div class="panel-heading">BLACK FRIDAY DEAL</div>
-              <div class="panel-body"><a href=""><img src="assets/img/specials/special1.jpg" class="img-responsive" style="width:100%" alt="Image"></a></div>
+              <div class="panel-body"><a href="shopping.html"><img src="assets/img/specials/special1.jpg" class="img-responsive" style="width:100%" alt="Image"></a></div>
               <div class="panel-footer">-50% for everything</div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="panel panel-info">
               <div class="panel-heading">Snowboarding season is coming</div>
-              <div class="panel-body"><a href=""><img src="assets/img/specials/special1.jpg" class="img-responsive" style="width:100%" alt="Image"></a></div>
+              <div class="panel-body"><a href="shopping.html"><img src="assets/img/specials/special1.jpg" class="img-responsive" style="width:100%" alt="Image"></a></div>
             </div>
           </div>
         </div>
     </div>
 
+    <div class="col-md-10 col-md-offset-1 text-center">
+      <div class="r-type row">
+        <a href="shopping.html"><img class="col-lg-6 col-md-6 col-sm-12 col-xs-12 type" src="assets/img/types/штаны.png" alt="T-Shirts"></a>
+        <a href="shopping.html"><img class="col-lg-6 col-md-6 col-sm-12 col-xs-12 type" src="assets/img/types/худи.png" alt="Pants"></a>
+        <a href="shopping.html"><img class="col-lg-6 col-md-6 col-sm-12 col-xs-12 type" src="assets/img/types/ботинки.png" alt="Shoes"></a>
+        <a href="shopping.html"><img class="col-lg-6 col-md-6 col-sm-12 col-xs-12 type" src="assets/img/types/шапки.png" alt="Example"></a>
+      </div>
+    </div>
+  </div>
+
     <div class="main_brands text-center"> <!-- Brands logos -->
       <div class="row">
-        <img class="col-sm-2 xs-brand" src="assets/img/brands/puma.png" alt="Brand1">
-        <img class="col-sm-2 xs-brand" src="assets/img/brands/bershka.png" alt="Brand2">
-        <img class="col-sm-2 xs-brand" src="assets/img/brands/oodji.png" alt="Brand3">
-        <img class="col-sm-2 xs-brand" src="assets/img/brands/pullandbear.png" alt="Brand4">
-        <img class="col-sm-2 xs-brand" src="" alt="Brand5">
-        <img class="col-sm-2 xs-brand" src="" alt="Brand6">
+        <img class="col-md-2 col-sm-3 col-xs-4 xs-brand" src="assets/img/brands/puma.png" alt="Brand1">
+        <img class="col-md-2 col-sm-3 col-xs-4 xs-brand" src=".assets/img/brands/bershka.png" alt="Brand2">
+        <img class="col-md-2 col-sm-3 col-xs-4 xs-brand" src="assets/img/brands/oodji.png" alt="Brand3">
+        <img class="col-md-2 col-sm-3 col-xs-4 xs-brand" src="assets/img/brands/pullandbear.png" alt="Brand4">
+        <img class="col-md-2 col-sm-3 col-xs-4 xs-brand" src="" alt="Brand5">
+        <img class="col-md-2 col-sm-3 col-xs-4 xs-brand" src="" alt="Brand6">
       </div>
       <div class="row">
-        <img class="col-sm-2 xs-brand" src="" alt="Brand7">
-        <img class="col-sm-2 xs-brand" src="" alt="Brand8">
-        <img class="col-sm-2 xs-brand" src="" alt="Brand9">
-        <img class="col-sm-2 xs-brand" src="" alt="Brand10">
-        <img class="col-sm-2 xs-brand" src="" alt="Brand11">
-        <img class="col-sm-2 xs-brand" src="" alt="Brand12">
+        <img class="col-md-2 col-sm-3 col-xs-4 xs-brand" src="" alt="Brand7">
+        <img class="col-md-2 col-sm-3 col-xs-4 xs-brand" src="" alt="Brand8">
+        <img class="col-md-2 col-sm-3 col-xs-4 xs-brand" src="" alt="Brand9">
+        <img class="col-md-2 col-sm-3 col-xs-4 xs-brand" src="" alt="Brand10">
+        <img class="col-md-2 col-sm-3 col-xs-4 xs-brand" src="" alt="Brand11">
+        <img class="col-md-2 col-sm-3 col-xs-4 xs-brand" src="" alt="Brand12">
       </div>
     </div>
   </div>
@@ -124,6 +166,8 @@
     <div class="left_f">...Social medias...
     </div>
     <div class="right_f">...Contacts...
+      <!-- <a href="shops.html">Магазины</a>
+      <a href="contacts.html">Контакты</a> -->
     </div>
   </footer>
 

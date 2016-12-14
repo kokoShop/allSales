@@ -7,16 +7,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> <!-- Including bootstrap -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script> <!-- Including JQuery JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> <!-- Including Bootstrap JavaScript -->
-    <script type="text/javascript" src="js/main.js"> </script>  <!-- My js -->
+    <script type="text/javascript" src="assets/js/main.js"> </script>  <!-- My js -->
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" /> <!-- My css -->
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|PT+Sans|Comfortaa" rel="stylesheet"> <!-- Google Fonts -->
 </head>
 <body>
 
   <header>
-      <div class="container-fluid">
+      <div class="header container-fluid">
         <nav class="navbar navbar-inverse center"> <!-- Navigation -->
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
               <span class="sr-only"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -24,85 +25,190 @@
             </button>
             <a class="navbar-brand" href="index.html">All Sales</a>
           </div>
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="catalog.html">Каталог</a></li>
-              <li><a href="shops.html">Магазины</a></li>
-              <li><a href="contacts.html">Контакты</a></li>
+          <!-- <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-left">
+              <li><a href="index.html">Main</a></li>
+              <li><a href="shops.html">Shops</a></li>
+              <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+          </div> -->
+
+          <div class="nav navbar-right collapse navbar-collapse" id="bs-navbar-collapse-1">
+            <form class="search-form btn btn-lg btn-nav">
+              <div class="form-group has-feedback">
+              <input type="text" class="form-control" id="search" placeholder="Search">
+              <span class="glyphicon glyphicon-search form-control-feedback"></span>
+              </div>
+            </form>
+            <a href="" class="glyphicon glyphicon-shopping-cart btn-nav btn"></a>
           </div>
+
           </nav>
       </div>
   </header>
 
   <div class="content container-fluid"> <!-- Main content of the page -->
 
-    <div class="catalog">  <!-- Shopping -->
-      <div class="l-block">
-        <div class="filters">
-          <h5 class="text-center">Filters</h5>
-        </div>
+    <ul class="breadcrumb">
+      <li><a class="label label-default" href="index.html">Home</a></li>
+      <li><a class="label label-default" href="shopping.html">Catalog</a></li>
+      <li class="label active">Data</li>
+    </ul>
+
+    <div id="sticky-anchor"></div>
+    <div class="filter-nav filter-container">
+
+      <div class="btn-group btn-group-lg filter" role="group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> Category <span class="caret"></span>
+        </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">All</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#"><input type="checkbox"> Pants</a></li>
+            <li><a href="#"><input type="checkbox"> T-Shirts</a></li>
+            <li><a href="#"><input type="checkbox"> Sweatshirts</a></li>
+            <li><a href="#"><input type="checkbox"> Hoodies</a></li>
+            <li><a href="#"><input type="checkbox"> Shoes</a></li>
+          </ul>
       </div>
+
+      <div class="btn-group btn-group-lg filter" role="group">
+        <button type="button" class="btn btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> Brand <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#">All</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#"><input type="checkbox"> Adidas</a></li>
+          <li><a href="#"><input type="checkbox"> Nike</a></li>
+          <li><a href="#"><input type="checkbox"> Puma</a></li>
+        </ul>
+      </div>
+
+      <div class="btn-group btn-group-lg filter" role="group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> Size <span class="caret"></span>
+        </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">All</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#"><input type="checkbox"> XS</a></li>
+            <li><a href="#"><input type="checkbox"> S</a></li>
+            <li><a href="#"><input type="checkbox"> M</a></li>
+            <li><a href="#"><input type="checkbox"> L</a></li>
+            <li><a href="#"><input type="checkbox"> XL</a></li>
+          </ul>
+      </div>
+    </div>
+
+
+    <div class="catalog">  <!-- Shopping -->
 
       <div class="list">
         <!-- <h5>Items</h5> -->
-        <!-- <div class="sorting btn-group">
-          <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <span>Sort by</span> <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="">1</a></li>
-            <li><a href="">2</a></li>
-            <li><a href="">3</a></li>
-            <li><a href="">4</a></li>
-            <li class="divider"></li>
-            <li><a href="#all">Anything</a></li>
-          </ul>
-        </div> -->
-
         <div class="row text-center">
-          <div class="col-md-3">
-            <div class="panel item">
-              <div class="panel-body"><a href="item.html"><img src="assets/img/brands/puma.png" alt="Item1"></a></div>
-              <div class="panel-footer">Item is cool, size is ok</div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="panel item">
-              <div class="panel-body"><a href="item.html"><img src="assets/img/brands/puma.png" alt="Item2"></a></div>
-              <div class="panel-footer">Item is cool, size is ok</div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="panel item">
-              <div class="panel-body"><a href="item.html"><img src="assets/img/brands/puma.png" alt="Item3"></a></div>
-              <div class="panel-footer">Item is cool, size is ok</div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="panel item">
-              <div class="panel-body"><a href="item.html"><img src="assets/img/brands/puma.png" alt="Item4"></a></div>
-              <div class="panel-footer">Item is cool, size is ok</div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="thumbnail panel item">
+            <div class="panel-body"><a href="item.html"><img src="assets/img/items/t-shirt.png" alt="Item1"></a></div>
+                <div class="panel-footer">
+                  <h4>Thumbnail label</h4>
+                  <p>Item is cool, size is ok</p>
+                  </div>
+                <div class="panel-button"><p><a href="#" class="btn btn-default" role="button">Button</a></p></div>
             </div>
           </div>
 
-          <div class="col-md-3">
-            <div class="panel item">
-              <div class="panel-body"><a href="item.html"><img src="assets/img/brands/puma.png" alt="Item1"></a></div>
-              <div class="panel-footer">Item is cool, size is ok</div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="thumbnail panel item">
+            <div class="panel-body"><a href="item.html"><img src="assets/img/items/t-shirt.png" alt="Item1"></a></div>
+                <div class="panel-footer">
+                  <h4>Thumbnail label</h4>
+                  <p>Item is cool, size is ok</p>
+                  </div>
+                <div class="panel-button"><p><a href="#" class="btn btn-default" role="button">Button</a></p></div>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="panel item">
-              <div class="panel-body"><a href="item.html"><img src="assets/img/brands/puma.png" alt="Item1"></a></div>
-              <div class="panel-footer">Item is cool, size is ok</div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="thumbnail panel item">
+            <div class="panel-body"><a href="item.html"><img src="assets/img/items/t-shirt.png" alt="Item1"></a></div>
+                <div class="panel-footer">
+                  <h4>Thumbnail label</h4>
+                  <p>Item is cool, size is ok</p>
+                  </div>
+                <div class="panel-button"><p><a href="#" class="btn btn-default" role="button">Button</a></p></div>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="panel item">
-              <div class="panel-body"><a href="item.html"><img src="assets/img/brands/puma.png" alt="Item1"></a></div>
-              <div class="panel-footer">Item is cool, size is ok</div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="thumbnail panel item">
+            <div class="panel-body"><a href="item.html"><img src="assets/img/items/t-shirt.png" alt="Item1"></a></div>
+                <div class="panel-footer">
+                  <h4>Thumbnail label</h4>
+                  <p>Item is cool, size is ok</p>
+                  </div>
+                <div class="panel-button"><p><a href="#" class="btn btn-default" role="button">Button</a></p></div>
             </div>
           </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="thumbnail panel item">
+            <div class="panel-body"><a href="item.html"><img src="assets/img/items/t-shirt.png" alt="Item1"></a></div>
+                <div class="panel-footer">
+                  <h4>Thumbnail label</h4>
+                  <p>Item is cool, size is ok</p>
+                  </div>
+                <div class="panel-button"><p><a href="#" class="btn btn-default" role="button">Button</a></p></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="thumbnail panel item">
+            <div class="panel-body"><a href="item.html"><img src="assets/img/items/t-shirt.png" alt="Item1"></a></div>
+                <div class="panel-footer">
+                  <h4>Thumbnail label</h4>
+                  <p>Item is cool, size is ok</p>
+                  </div>
+                <div class="panel-button"><p><a href="#" class="btn btn-default" role="button">Button</a></p></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="thumbnail panel item">
+            <div class="panel-body"><a href="item.html"><img src="assets/img/items/t-shirt.png" alt="Item1"></a></div>
+                <div class="panel-footer">
+                  <h4>Thumbnail label</h4>
+                  <p>Item is cool, size is ok</p>
+                  </div>
+                <div class="panel-button"><p><a href="#" class="btn btn-default" role="button">Button</a></p></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="thumbnail panel item">
+            <div class="panel-body"><a href="item.html"><img src="assets/img/items/t-shirt.png" alt="Item1"></a></div>
+                <div class="panel-footer">
+                  <h4>Thumbnail label</h4>
+                  <p>Item is cool, size is ok</p>
+                  </div>
+                <div class="panel-button"><p><a href="#" class="btn btn-default" role="button">Button</a></p></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="thumbnail panel item">
+            <div class="panel-body"><a href="item.html"><img src="assets/img/items/t-shirt.png" alt="Item1"></a></div>
+                <div class="panel-footer">
+                  <h4>Thumbnail label</h4>
+                  <p>Item is cool, size is ok</p>
+                  </div>
+                <div class="panel-button"><p><a href="#" class="btn btn-default" role="button">Button</a></p></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="thumbnail panel item">
+            <div class="panel-body"><a href="item.html"><img src="assets/img/items/t-shirt.png" alt="Item1"></a></div>
+                <div class="panel-footer">
+                  <h4>Thumbnail label</h4>
+                  <p>Item is cool, size is ok</p>
+                  </div>
+                <div class="panel-button"><p><a href="#" class="btn btn-default" role="button">Button</a></p></div>
+            </div>
+          </div>
+
+
 
 
         </div>

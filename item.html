@@ -1,0 +1,97 @@
+<!DOCTYPE html>       <!--  -->
+<html>
+<head lang="uk">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Item</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> <!-- Including bootstrap -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script> <!-- Including JQuery JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> <!-- Including Bootstrap JavaScript -->
+    <script type="text/javascript" src="assets/js/main.js"> </script>  <!-- My js -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" /> <!-- My css -->
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|PT+Sans|Comfortaa" rel="stylesheet"> <!-- Google Fonts -->
+</head>
+<body>
+
+  <header>
+    <div class="header container-fluid">
+      <nav class="navbar navbar-inverse center"> <!-- Navigation -->
+        <div class="navbar-header-item">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">All Sales</a>
+        </div>
+
+        <div class="nav navbar-right collapse navbar-collapse" id="bs-navbar-collapse-1">
+            <form class="search-form btn btn-nav">
+              <div class="form-group has-feedback">
+              <input type="text" class="form-control" id="search" placeholder="Search">
+              <span class="glyphicon glyphicon-search form-control-feedback"></span>
+              </div>
+            </form>
+            <a href="" class="glyphicon glyphicon-shopping-cart btn-nav btn"></a>
+            <a href="index.html" class="glyphicon glyphicon-font btn-nav btn btn-a"></a>
+        </div>
+
+        </nav>
+    </div>
+  </header>
+
+  <div class="content container-fluid"> <!-- Main content of the page -->
+
+    <div class="item-l">
+      <div class="item-pict">
+        <img src="assets/img/items/lookbook2.jpg" alt="Item1">
+      </div>
+    </div>
+    <div class="item-r">
+      <div class="back-block">
+        <a href="javascript: history.go(-1)" class="glyphicon glyphicon-menu-left btn btn-back"></a>
+      </div>
+      <div class="desc">
+        <div class="desc-head">
+          <h2>Item #228</h2>
+          <span class="label label-primary">Артикул: ххххх</span>
+        </div>
+        <div class="desc-body">
+          <p><span>Some description of the wear. Includes information about about materials, colors etc.</span></p>
+          <p><span>Information about the brand and maybe collection which includes this item.</span></p>
+        </div>
+
+        <div class="item-btns-block">
+          <div class="btn-group btn-group-lg" role="group" aria-label="...">
+            <div class="btn-group btn-group-lg" role="group">
+              <button type="button" class="btn btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> Size <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">Choose the size</li>
+                <li><a href="#">XS</a></li>
+                <li><a href="#">S</a></li>
+                <li><a href="#">M</a></li>
+                <li class="disabled"><a href="#">L</a></li>
+                <li class="disabled"><a href="#">XL</a></li>
+              </ul>
+            </div>
+            <button type="button" class="btn btn-primary">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer id="footer" class="container"> <!-- Footer -->
+    <div class="left_f">
+      ...Social medias...
+    </div>
+    <div class="right_f">
+      ...Contacts...
+    </div>
+  </footer>
+
+  </body>
+  </html>
