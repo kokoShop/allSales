@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<!--
+/*
+ * examples/mysql/index.html
+ * 
+ * This file is part of EditableGrid.
+ * http://editablegrid.net
+ *
+ * Copyright (c) 2011 Webismymind SPRL
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://editablegrid.net/license
+ */
+-->
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Админка</title>
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
+
+        <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+		<link rel="stylesheet" href="css/font-awesome-4.1.0/css/font-awesome.min.css" type="text/css" media="screen">
+        	</head>
+	
+	<body>
+		<div id="wrap">
+		<h1>Админка</h1> 
+		
+			<div id="message"></div>
+
+            <div id="toolbar">
+              <input type="text" id="filter" name="filter" placeholder="Поиск"  />
+              <a id="showaddformbutton" class="button green"><i class="fa fa-plus"></i> Добавить товар</a>
+            </div>
+			<div id="tablecontent"></div>
+		
+			<div id="paginator"></div>
+		</div>  
+		
+		<script src="js/editablegrid-2.1.0-b25.js"></script>   
+		<script src="js/jquery-1.11.1.min.js" ></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+		<script src="js/demo.js" ></script>
+
+		<script type="text/javascript">
+		
+            var datagrid = new DatabaseGrid();
+			window.onload = function() { 
+
+                $("#filter").keyup(function() {
+                    datagrid.editableGrid.filter( $(this).val());
+                  });
+
+                $("#showaddformbutton").click( function()  {
+                  showAddForm();
+                });
+                $("#cancelbutton").click( function() {
+                  showAddForm();
+                });
+
+                $("#addbutton").click(function() {
+                  datagrid.addRow();
+                });
+
+        
+			}; 
+		</script>
+
+        <div id="addform">
+
+            <div class="row">
+                <input type="text" id="name" name="name" placeholder="name" />
+            </div>
+
+             <div class="row">
+                <input type="text" id="firstname" name="firstname" placeholder="firstname" />
+            </div>
+
+            <div class="row tright">
+              <a id="addbutton" class="button green" ><i class="fa fa-save"></i> Добавить</a>
+              <a id="cancelbutton" class="button delete">Отмена</a>
+            </div>
+        </div>
+        
+	</body>
+
+</html>
