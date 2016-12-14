@@ -89,7 +89,7 @@ DatabaseGrid.prototype.deleteRow = function(id)
 
   var self = this;
 
-  if ( confirm('Are you sur you want to delete the row id ' + id )  ) {
+  if ( confirm('видаляємо ' + id )  ) {
 
         $.ajax({
 		url: 'delete.php',
@@ -126,18 +126,17 @@ DatabaseGrid.prototype.addRow = function(id)
 		data: {
 			tablename : self.editableGrid.name,
 			name:  $("#name").val(),
-			firstname:  $("#firstname").val()
+			price:  $("#price").val()
 		},
 		success: function (response) 
 		{ 
 			if (response == "ok" ) {
    
-                // hide form
                 showAddForm();   
         		$("#name").val('');
-                $("#firstname").val('');
+                $("#price").val('');
 			    
-                alert("Row added : reload model");
+                alert("добавлено");
                 self.fetchGrid();
            	}
             else 

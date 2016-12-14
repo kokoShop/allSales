@@ -1,18 +1,5 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 
-<!--
-/*
- * examples/mysql/index.html
- * 
- * This file is part of EditableGrid.
- * http://editablegrid.net
- *
- * Copyright (c) 2011 Webismymind SPRL
- * Dual licensed under the MIT or GPL Version 2 licenses.
- * http://editablegrid.net/license
- */
--->
-
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -26,13 +13,13 @@
 	
 	<body>
 		<div id="wrap">
-		<h1>Админка</h1> 
+		<h1>Адмін панель</h1> 
 		
 			<div id="message"></div>
 
             <div id="toolbar">
-              <input type="text" id="filter" name="filter" placeholder="Поиск"  />
-              <a id="showaddformbutton" class="button green"><i class="fa fa-plus"></i> Добавить товар</a>
+              <input type="text" id="filter" name="filter" placeholder="Пошук"  />
+              <a id="showaddformbutton" class="button green"><i class="fa fa-plus"></i> Додати</a>
             </div>
 			<div id="tablecontent"></div>
 		
@@ -71,16 +58,16 @@
         <div id="addform">
 
             <div class="row">
-                <input type="text" id="name" name="name" placeholder="name" />
+                <input type="text" id="name" name="name" placeholder="Назва товару" />
             </div>
 
              <div class="row">
-                <input type="text" id="firstname" name="firstname" placeholder="firstname" />
+                <input type="text" id="price" name="price" placeholder="Ціна" />
             </div>
 
             <div class="row tright">
-              <a id="addbutton" class="button green" ><i class="fa fa-save"></i> Добавить</a>
-              <a id="cancelbutton" class="button delete">Отмена</a>
+              <a id="addbutton" class="button green" ><i class="fa fa-save"></i> Додати</a>
+              <a id="cancelbutton" class="button delete">Відмінити</a>
             </div>
         </div>
         

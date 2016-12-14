@@ -25,12 +25,13 @@ $mysqli->real_connect($config['db_host'],$config['db_user'],$config['db_password
 $grid = new EditableGrid();
 
 $grid->addColumn('id', 'ID', 'integer', NULL, false); 
-$grid->addColumn('name', 'Название', 'string');  
-$grid->addColumn('price', 'Цена', 'integer');  
-$grid->addColumn('number', 'Количество', 'integer');  
-$grid->addColumn('photourl', 'Фотография', 'string');  
+$grid->addColumn('type', 'Тип', 'string');  
+$grid->addColumn('name', 'Назва', 'string');  
+$grid->addColumn('price', 'Ціна', 'integer');  
+$grid->addColumn('number', 'Кількість', 'integer');  
+$grid->addColumn('photourl', 'Фотографія', 'string');  
 $grid->addColumn('website', 'Сайт', 'string');  
-$grid->addColumn('action', 'Удалить', 'html', NULL, false, 'id');  
+$grid->addColumn('action', 'Видалити', 'html', NULL, false, 'id');  
 
 $mydb_tablename = (isset($_GET['db_tablename'])) ? stripslashes($_GET['db_tablename']) : 'demo';
                                                                        
