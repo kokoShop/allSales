@@ -25,11 +25,6 @@ html, body {
   background: black;
 }
 
-#map {
-  height: 400px;
-  width: 100%;
-}
-
 .item { transition: all .2s ease-in-out; }
 
 .item:hover { transform: scale(1.15); }
