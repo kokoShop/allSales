@@ -491,6 +491,37 @@ html, body {
   right: 0;
 }
 
+.modal  {
+    padding-right: 0px;
+    background-color: rgba(4, 4, 4, 0.8);
+    }
+.modal-dialog {
+  top: 5%;
+  width: 100%;
+  position: absolute;
+}
+.modal-content {
+  border-radius: 5px;
+  border: none;
+  top: 40%;
+  padding: 20px 100px;
+  background-color: #e6e6e6;
+  color: black;
+}
+.modal-body {
+  padding: 20px 25%;
+  padding-bottom: 30px;
+}
+
+.inp-blocks {
+  margin: 15px;
+}
+
+.down-btn {
+  margin-top: 20px;
+}
+
+
 @media (max-width: 768px){
   .cart-block {
     float: none;

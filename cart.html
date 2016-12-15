@@ -98,9 +98,38 @@
         <a href="javascript: history.go(-1)" class="glyphicon glyphicon-menu-left btn btn-back"></a>
       </div>
       <div class="order-block text-center transition">
-        <button type="button" class="btn btn-lg order-btn">
+        <button type="button" class="btn btn-lg order-btn" data-toggle="modal" data-target=".bs-example-modal-lg">
           <span class="glyphicon glyphicon-credit-card"></span>
         </button>
+
+
+        <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <H2>Оформлення замовлення</H2>
+                <h4>Введіть дані про себе і проведіть оплату</h4>
+              </div>
+              <div class="modal-body">
+                <div class="input-group inp-blocks">
+                  <span class="input-group-addon glyphicon glyphicon-user" id="basic-addon1"></span>
+                  <input type="text" class="form-control" placeholder="Прізвище та ім'я" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group inp-blocks">
+                  <span class="input-group-addon glyphicon glyphicon-phone-alt" id="basic-addon1"></span>
+                  <input type="text" class="form-control" placeholder="Номер телефону" aria-describedby="basic-addon1">
+                </div>
+
+                <div class="btn-group btn-group-lg down-btn" role="group" aria-label="...">
+                  <button type="button" class="btn btn-default">Сплатити</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </div>
 
