@@ -1,0 +1,78 @@
+<!DOCTYPE html>       <!--  -->
+<html>
+<head lang="uk">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> <!-- Including bootstrap -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script> <!-- Including JQuery JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> <!-- Including Bootstrap JavaScript -->
+    <script type="text/javascript" src="assets/js/main.js"> </script>  <!-- My js -->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" /> <!-- My css -->
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|PT+Sans|Comfortaa" rel="stylesheet"> <!-- Google Fonts -->
+</head>
+<body>
+
+  <header>
+      <div class="header container-fluid">
+        <nav class="navbar navbar-inverse center"> <!-- Navigation -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
+              <span class="sr-only"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">All Sales</a>
+          </div>
+
+          <div class="nav navbar-right collapse navbar-collapse" id="bs-navbar-collapse-1">
+            <form class="search-form btn btn-lg btn-nav">
+              <div class="form-group has-feedback">
+              <input type="text" class="form-control" id="search" placeholder="Search">
+              <span class="glyphicon glyphicon-search form-control-feedback"></span>
+              </div>
+            </form>
+            <a href="cart.html" class="glyphicon glyphicon-shopping-cart btn-nav btn"></a>
+          </div>
+
+          </nav>
+      </div>
+  </header>
+
+  <div class="content container-fluid"> <!-- Main content of the page -->
+
+  
+      <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 50.464207, lng: 30.519949}; 
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5lqGiUom0pzWW0RdWLkchfpFdw0bl5K0&callback=initMap">
+    </script>
+    
+
+  </div>
+
+  <footer id="footer" class="container"> <!-- Footer -->
+    <div class="left_f">
+      ...Social medias...
+    </div>
+    <div class="right_f">
+      ...Contacts...
+    </div>
+  </footer>
+
+  </body>
+  </html>
