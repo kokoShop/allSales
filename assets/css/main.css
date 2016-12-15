@@ -123,6 +123,7 @@ html, body {
   width: 100%;
   min-height: 700px;
   color: white;
+  min-height: 800px;
 }
 
 #footer {
@@ -360,13 +361,14 @@ html, body {
   position: absolute;
   width: 100%;
   top: -50px;
-  left: 0px;
+  left: 30px;
   /*transform: rotateX(-10px);*/
 }
 
 .item-pict img {
   width: inherit;
   height: inherit;
+  max-width: 600px;
 }
 
 .desc-head {
