@@ -46,10 +46,10 @@
       <!-- <h2 class="text-center">Отложенный товар</h2> -->
         <div class="item-line row">
           <div class="cart-item text-left col-lg-4 col-sm-6">
-            <img src="assets/img/items/t-shirt.png" alt="Item1">
+            <img src="<?php include_once 'backend/photoshow.php'; ?>" alt="Item1">
           </div>
           <div class="cart-item text-left col-lg-4 col-sm-6">
-            <h4>Full name of wear</h4>
+            <h4><?php include_once 'backend/itemshow.php'; echo $name_product; ?></h4>
             <h4>Brand: Unknown</h4>
           </div>
           <div class="cart-item text-right col-lg-2 col-sm-6">
@@ -58,7 +58,7 @@
           </div>
           <div class="cart-item text-right col-lg-2 col-sm-6">
             <h4>Price:</h4>
-            <h4>$1488</h4>
+            <h4>₴<?php include_once 'backend/priceshow.php'; ?></h4>
           </div>
           <div class="order-hoverer">
             <button type="button" class="btn btn-lg cancel">
@@ -66,30 +66,6 @@
             </button>
           </div>
         </div>
-
-        <div class="item-line row">
-          <div class="cart-item text-left col-lg-4 col-sm-6">
-            <img src="assets/img/items/t-shirt.png" alt="Item1">
-          </div>
-          <div class="cart-item text-left col-lg-4 col-sm-6">
-            <h4>Full name of wear</h4>
-            <h4>Brand: Unknown</h4>
-          </div>
-          <div class="cart-item text-right col-lg-2 col-sm-6">
-            <h4>Size:</h4>
-            <h4>M</h4>
-          </div>
-          <div class="cart-item text-right col-lg-2 col-sm-6">
-            <h4>Price:</h4>
-            <h4>$1488</h4>
-          </div>
-          <div class="order-hoverer">
-            <button type="button" class="btn btn-lg cancel">
-              <span class="glyphicon glyphicon-trash"></span>
-            </button>
-          </div>
-        </div>
-
 
     </div>
 
