@@ -20,7 +20,7 @@
   echo '<div class="panel-body">';
   echo '<a href="item.html?id=' . $row['id'] . '">';
   echo '<img src="' . $row['photourl'] . '" alt="Item1"></a></div>';
-  echo '<div class="panel-footer"><h4>' . $row['name'] . '</h4><p>₴' . $row['price'] . '</p></div><div class="panel-button"><p><a href="#" class="btn btn-default" role="button">Button</a></p></div></div></div>';
+  echo '<div class="panel-footer"><h4>' . $row['name'] . '</h4><p>₴' . $row['price'] . '</p></div><div class="panel-button"><p><a href="#" class="btn btn-default" role="button">Add to Cart</a></p></div></div></div>';
   }
 
   mysql_close();
